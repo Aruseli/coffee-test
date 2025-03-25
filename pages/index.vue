@@ -1,17 +1,40 @@
 <script setup lang="ts">
-// Перенаправление на страницу аутентификации
-import { navigateTo } from '#app';
-import { onMounted } from 'vue';
+import { useAuthStore } from '~/stores/auth';
+import { onMounted, ref } from 'vue';
+import { useRouter } from 'vue-router';
+import LoginForm from '~/components/auth/LoginForm.vue';
 
-// Используем onMounted для выполнения кода в контексте Vue
+const router = useRouter();
+const authStore = useAuthStore();
+const loading = ref(true);
+
 onMounted(() => {
-  // Мгновенное перенаправление на страницу аутентификации
-  navigateTo('/auth');
+  // Инициализация состояния аутентификации
+  authStore.initAuth();
+  
+  // Если пользователь уже аутентифицирован, перенаправляем на страницу аккаунта
+  if (authStore.isAuthenticated) {
+    router.push('/account');
+  }
+  
+  loading.value = false;
 });
 </script>
 
 <template>
-  <div>
-    <!-- Пустой шаблон, т.к. перенаправление происходит мгновенно -->
+  <div class="auth-page">
+    <div v-if="!loading">
+      <LoginForm />
+    </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+</style>
