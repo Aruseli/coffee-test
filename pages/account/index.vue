@@ -13,7 +13,7 @@ const productsStore = useProductsStore();
 // Обработка выхода из системы
 const handleLogout = () => {
   authStore.logout();
-  router.push('/auth');
+  router.push('/');
 };
 
 onMounted(async () => {
