@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "status": "active",
+    "date_created": "2025-01-15T10:30:00Z",
+    "name": "Эфиопия Сидамо",
+    "category": "coffee",
+    "price": 890,
+    "description": "Кофе с фруктовыми нотками и ягодной кислинкой",
+    "rating": 4.8,
+    "origin": "Эфиопия"
+  },
+  {
+    "id": 2,
+    "status": "active",
+    "date_created": "2025-01-20T14:15:00Z",
+    "name": "Колумбия Супремо",
+    "category": "coffee",
+    "price": 750,
+    "description": "Сбалансированный кофе с нотами карамели и орехов",
+    "rating": 4.5,
+    "origin": "Колумбия"
+  },
+  {
+    "id": 3,
+    "status": "out_of_stock",
+    "date_created": "2025-02-05T09:45:00Z",
+    "name": "Бразилия Сантос",
+    "category": "coffee",
+    "price": 650,
+    "description": "Кофе с низкой кислотностью и шоколадным послевкусием",
+    "rating": 4.2,
+    "origin": "Бразилия"
+  },
+  {
+    "id": 4,
+    "status": "active",
+    "date_created": "2025-02-10T11:20:00Z",
+    "name": "Кения АА",
+    "category": "coffee",
+    "price": 950,
+    "description": "Яркий кофе с цитрусовыми нотами и высокой кислотностью",
+    "rating": 4.7,
+    "origin": "Кения"
+  },
+  {
+    "id": 5,
+    "status": "inactive",
+    "date_created": "2025-01-10T08:30:00Z",
+    "name": "Гватемала Антигуа",
+    "category": "coffee",
+    "price": 820,
+    "description": "Кофе с нотами шоколада и легкой дымностью",
+    "rating": 4.4,
+    "origin": "Гватемала"
+  },
+  {
+    "id": 6,
+    "status": "active",
+    "date_created": "2025-02-15T16:40:00Z",
+    "name": "Зеленый чай Сенча",
+    "category": "tea",
+    "price": 450,
+    "description": "Классический японский зеленый чай с травяным вкусом",
+    "rating": 4.3
+  },
+  {
+    "id": 7,
+    "status": "active",
+    "date_created": "2025-02-20T13:10:00Z",
+    "name": "Улун Те Гуань Инь",
+    "category": "tea",
+    "price": 680,
+    "description": "Полуферментированный чай с цветочным ароматом",
+    "rating": 4.6
+  },
+  {
+    "id": 8,
+    "status": "active",
+    "date_created": "2025-03-01T10:00:00Z",
+    "name": "Керамическая чашка",
+    "category": "accessories",
+    "price": 1200,
+    "description": "Чашка ручной работы для кофе и чая",
+    "rating": 4.9
+  },
+  {
+    "id": 9,
+    "status": "active",
+    "date_created": "2025-03-05T15:30:00Z",
+    "name": "Ручная кофемолка",
+    "category": "accessories",
+    "price": 3500,
+    "description": "Кофемолка с керамическими жерновами для равномерного помола",
+    "rating": 4.7
+  },
+  {
+    "id": 10,
+    "status": "active",
+    "date_created": "2025-03-10T09:15:00Z",
+    "name": "Шоколадное печенье",
+    "category": "snacks",
+    "price": 250,
+    "description": "Домашнее печенье с кусочками шоколада",
+    "rating": 4.5
+  },
+  {
+    "id": 11,
+    "status": "active",
+    "date_created": "2025-03-12T11:45:00Z",
+    "name": "Миндальные бискотти",
+    "category": "snacks",
+    "price": 320,
+    "description": "Традиционное итальянское печенье с миндалем",
+    "rating": 4.4
+  },
+  {
+    "id": 12,
+    "status": "out_of_stock",
+    "date_created": "2025-01-25T12:20:00Z",
+    "name": "Коста-Рика Тарразу",
+    "category": "coffee",
+    "price": 780,
+    "description": "Кофе с нотами цитрусовых и карамели",
+    "rating": 4.6,
+    "origin": "Коста-Рика"
+  }
+]
