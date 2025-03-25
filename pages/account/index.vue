@@ -29,16 +29,37 @@ onMounted(async () => {
   // Загрузка данных о продуктах
   await productsStore.fetchProducts();
 });
+
+const isModalOpened = ref(false);
+
+const openModal = () => {
+  isModalOpened.value = true;
+};
+const closeModal = () => {
+  isModalOpened.value = false;
+};
 </script>
 
 <template>
   <div class="account-page">
     <div class="account-header">
       <h1>Личный кабинет</h1>
-      <button class="btn btn-danger logout-btn" @click="handleLogout">
+      <button class="btn btn-primary logout-btn" @click="openModal">
         <UIcon name="i-heroicons-arrow-right-on-rectangle" class="logout-icon" />
         Выход
       </button>
+      <ModalComponent :isOpen="isModalOpened" @modal-close="closeModal" name="first-modal" class="mb-1">
+        <template #header><p>Вы уверены, что хотите выйти?</p></template>
+        <template #footer>
+          <button class="btn" @click="isModalOpened = false">
+            Нет
+          </button>
+          <button class="btn btn-primary logout-btn" @click="handleLogout">
+            <UIcon name="i-heroicons-arrow-right-on-rectangle" class="logout-icon" />
+            Да
+          </button>
+        </template>
+      </ModalComponent>
     </div>
     
     <div class="account-content">
